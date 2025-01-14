@@ -88,7 +88,7 @@ body {
   }
 
   .custom-Select-button {
-    @apply border-secondaryColor border-b  border-solid w-full py-2 text-sm bg-white hover:bg-secondaryBlue hover:text-white hover:font-semibold
+    @apply border-secondaryColor border-b  border-solid w-full py-2 text-sm bg-white hover:bg-primaryColor hover:text-white hover:font-semibold
   }
 
   .custom-scrollbar {

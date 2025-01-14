@@ -7,6 +7,7 @@ interface CustomScrollBarProps {
     wheelSize?: number;
     scrollBarSize?: number;
     setChildHeight: (height: number) => void;
+    trigger: boolean;
 }
 
 
@@ -17,6 +18,7 @@ export const CustomScrollBar = ({
     scrollBarSize,
     wheelSize,
     setChildHeight,
+    trigger,
 }:CustomScrollBarProps) => {
     const [currentY, setCurrentY] = React.useState(0);
     const [childrenHeight, setChildrenHeight] = React.useState(0);
@@ -97,8 +99,9 @@ export const CustomScrollBar = ({
     },[ref, childrenRef, maskingHeight, currentY]);
 
     return(
+        trigger ? 
         <div 
-            className={`overflow-y-hidden w-full relative ${customClass}`} 
+            className={`overflow-y-hidden w-full relative  ${customClass}`} 
             style={{height:maskingHeight}}>
             <div 
                 className="w-full h-auto transform" 
@@ -108,7 +111,7 @@ export const CustomScrollBar = ({
                     {children}
             </div>
             <div 
-                className="absolute top-1/2 -translate-y-1/2 right-2 bg-secondaryRed flex justify-center" 
+                className="absolute top-1/2 -translate-y-1/2 right-2 bg-transparent flex justify-center" 
                 style={{
                     height: maskingHeight-16,
                     width: scrollBarSize,
@@ -116,7 +119,7 @@ export const CustomScrollBar = ({
             >
                 <div 
                 id="scrollWheel"
-                    className="flex-shrink-0 rounded-xl bg-secondary cursor-pointer"
+                    className="flex-shrink-0 rounded-xl bg-primaryColor cursor-pointer"
                     style={{
                         height: Math.floor((maskingHeight/childrenHeight)*100), width:wheelSize,
                         transform: `translateY(${wheelY}px)`,
@@ -126,5 +129,6 @@ export const CustomScrollBar = ({
                     />
             </div>
         </div>
+        : null
     )
 }

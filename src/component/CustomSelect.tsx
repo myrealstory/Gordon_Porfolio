@@ -115,7 +115,7 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
     if(childrenHeight === 0) return 0;
     if(childrenHeight < 150) return childrenHeight;
     return 150;
-  },[options]);
+  },[options,childrenHeight]);
 
   return (
     <div className={`relative flex flex-col custom-Select ${className}`}>
@@ -145,20 +145,20 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
               : "Select an option")}
         </button>
         <div
-          className="absolute left-1/2 -translate-x-1/2 duration-300 transform origin-top bg-white w-full overflow-hidden rounded-xl border-secondaryColor h-full"
+          className="absolute left-1/2 -translate-x-1/2 duration-300 transform origin-top bg-white w-full rounded-xl h-full"
           style={{
             maxHeight: trigger ? 150 : 0,
-            top: 0,
-            borderWidth: trigger ? 1 : 0,
+            top: 35,
             zIndex: trigger ? 10 : 0,
           }}
         >
           <CustomScrollBar
             maskingHeight={maskingHeight}
-            customClass="w-full"
+            customClass="w-full border border-solid border-secondaryColor rounded-xl"
             scrollBarSize={1}
             wheelSize={6}
             setChildHeight={setChildrenHeight}
+            trigger={trigger}
           >
             {options?.map((option) => (
               <button
