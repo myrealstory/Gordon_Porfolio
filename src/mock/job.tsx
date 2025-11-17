@@ -1,11 +1,20 @@
 export const JobArray = () => {
     const jobs = [
         {
-            id: 1,
+            id: 4,
+            title: "jobtitle",
+            company: "KOCOO",
+            startDate: "2025-01-01",
+            endDate: "2025-12-01",
+            description: "jobDesc4",
+            project: "project4",
+        },
+        {
+            id: 3,
             title: "jobtitle",
             company: "WAION",
             startDate: "2024-06-01",
-            endDate: "nows",
+            endDate: "2024-12-01",
             description: "jobDesc1",
             project: "project1",
         },
@@ -19,7 +28,7 @@ export const JobArray = () => {
             project: "project2",
         },
         {
-            id: 3,
+            id: 1,
             title: "designJob",
             company: "AMG",
             startDate: "2020-12-01",
