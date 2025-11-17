@@ -45,12 +45,11 @@
     "jobDesc3": "<li style='font-weight:bold;font-size:16p;'>工作描述：</li><li>- 負責影像製作的各個方面，包括創意發想、YouTube 專案、影片後期製作、YouTube 縮圖設計（平面設計）、動畫製作和媒體管理。</li><li>- 負責監督影片質量控制及分發。</li><li>- 維持影片標準和質量，包括整體風格一致性。</li>",
     "jobDesc4": "<li style='font-weight:bold;font-size:16px;margin-bottom:8px;'>工作描述：</li><li>- 負責管理和把關前端所有相關專業</li><li>- 統籌和管理專案進度</li><li>- 審核前端在專案品質，確保能完整上線</li><li>- 開發和研發新的功能和UX，並提供更多改善專案品質和使用體驗</li><li>- 嚴謹Type格式，為承接著鋪路</li><li>- 獨立開發小元件，為接下來公司專案需求可以快速投入開發</li>",
     "project4": "<li style='font-weight:bold;font-size:16p;'>項目 1：網頁交友軟體 SugarWell：</li><li>- 完成組零件開發</li><li>- 統籌和緊盯項目開發時間和進度</li><li>- 堅守專案品質，不允許Any去定義值</li><li>- 與後端一同用Jitsi完成聊天室撰寫和測試</li><li>- 寫Jest檢測專案可行性。</li><li>- 完成CiCD 和 middleWare的設定</li><li>- 熟悉 SSR 和 CSR 的切分撰寫程式</li><li>- 熟悉 Vibe 的調教和快速開發</li><li style='font-weight:bold;font-size:16p;margin-top:10px;'>項目 2：組合式商業板塊</li><li>- 監督專案程式品質</li><li>- 翻新和改善交易流程</li><li>- 開發小套件供組合式使用</li><li>- 改善金流部分</li><li>- 新增Coupon 邏輯運算和價格影響</li><li style='font-weight:bold;font-size:16p;margin-top:10px;'>項目 3：遊戲界面</li><li>- 建立網頁遊戲專區</li><li>- 撰寫遊戲時使用視窗功能</li><li>- 設計流程</li><li>- 設計客制化套件例如 horizontal Scroll</li><li>- 串接 googleAuth，FacebookAuth，TelegramAuth</li><li>- 翻新舊UI，重新撰寫新的UI和提升UX體驗</li><li>- 管理專案進程</li>"
-    
   },
   "examples": {
     "title": "範例",
     "content": "以下是我的一些作品範例。點擊並使用以檢視實際網站。",
-    "dataContent":"重構數據結構並放入選擇器",
+    "dataContent": "重構數據結構並放入選擇器",
     "password": "密碼",
     "lengthValid": "8個字元",
     "upperValid": "大寫字母",
@@ -66,6 +65,18 @@
     "region2": "選擇地區2",
     "countryLabel": "國家",
     "region1Label": "地區1",
-    "region2Label": "地區2"
+    "region2Label": "地區2",
+    "endContent": "查看更多細節請參閱 cakes 或 104 台灣履歷",
+    "banner": {
+      "published": "已發布",
+      "unpublished": "未發布",
+      "edit": "編輯",
+      "modalChangeStatusTttle": "更改狀態",
+      "delete": "刪除",
+      "expire": "到期",
+      "beforeDay": "剩餘 {{dayLeft}} 天",
+      "todayDay": "今日到期",
+      "expired": "已於 {{dayLeft}} 天前到期"
+    }
   }
 }
